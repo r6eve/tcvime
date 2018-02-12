@@ -23,12 +23,14 @@ tcvime - 漢字直接入力補助機能プラグインスクリプト
   plugin/tcvime.vim   'runtimepath'/plugin/ プラグインスクリプト本体
   autoload/tcvime.vim 'runtimepath'/autoload/ プラグインから呼び出す関数
   autoload/tcvime/bushudic.vim 'runtimepath'/autoload/tcvime/ 部首合成変換用辞書
+  autoload/tcvime/helptbl_gcode.vim    'runtimepath'/autoload/tcvime/ ヘルプ表
   autoload/tcvime/helptbl_tcode.vim    'runtimepath'/autoload/tcvime/ ヘルプ表
   autoload/tcvime/helptbl_tutcode.vim  'runtimepath'/autoload/tcvime/ ヘルプ表
   autoload/tcvime/helptbl_tutcodep.vim 'runtimepath'/autoload/tcvime/ ヘルプ表
   autoload/tcvime/kanji2seq.vim        'runtimepath'/autoload/tcvime/
 					    漢字から入力シーケンスへの変換。
 					    部首合成変換やヘルプ表示時に使用。
+  autoload/tcvime/kanji2seq_gcode.vim    'runtimepath'/autoload/tcvime/ 高速化用
   autoload/tcvime/kanji2seq_tcode.vim    'runtimepath'/autoload/tcvime/ 高速化用
   autoload/tcvime/kanji2seq_tutcode.vim  'runtimepath'/autoload/tcvime/ 高速化用
   autoload/tcvime/kanji2seq_tutcodep.vim 'runtimepath'/autoload/tcvime/ 高速化用
@@ -36,6 +38,7 @@ tcvime - 漢字直接入力補助機能プラグインスクリプト
   mazegaki.dic        'runtimepath'         交ぜ書き変換用辞書
   bushu.help          'runtimepath'         ユーザ用部首合成辞書
   kanjitable.txt      'runtimepath'         漢字テーブルファイル
+  keymap/gcode.vim    'runtimepath'/keymap/ G-Codeのkeymap
   keymap/tcode.vim    'runtimepath'/keymap/ T-Codeのkeymap
   keymap/tutcode.vim  'runtimepath'/keymap/ TUT-Codeのkeymap
   keymap/tutcodep.vim 'runtimepath'/keymap/ tutcodeに新常用漢字対応等63文字追加
